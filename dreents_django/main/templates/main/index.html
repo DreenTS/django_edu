@@ -1,0 +1,22 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block body_content %}
+    <div class="features">
+        <h1>{{ h1_content }}</h1>
+        {% filter upper %}
+            <p>Абзац</p>
+        {% endfilter %}
+        <button class="btn btn-primary">Какая-то красивая кнопка</button>
+        {% for v in values %}
+            {% if v|length <= 3 %}
+                <p>{{ v|upper }}</p>
+            {% endif %}
+        {% endfor %}
+        {% for k, v in objects_dict.items %}
+            <p>{{ k }}: {{ v }}</p>
+        {% endfor %}
+{#        {% include 'main/test.html' %}#}
+    </div>
+{% endblock %}

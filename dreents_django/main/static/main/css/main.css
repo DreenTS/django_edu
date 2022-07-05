@@ -1,0 +1,85 @@
+body {
+    background: #8febe0;
+}
+
+aside {
+    float: left;
+    background: #99d9ea;
+    width: 15%;
+    padding: 1%;
+    height: 100vmax;
+    color: #13b09e;
+    border-right: 5px solid #22e0ca;
+}
+
+aside img {
+    width: 60px;
+}
+
+aside .logo {
+    font-size: 27px;
+    font-weight: bold;
+    position: relative;
+    top: +5px;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+aside ul {
+    list-style: none;
+}
+aside ul li {
+    color: #0d6efd;
+    display: block;
+    margin-top: 5px;
+    transition: transform .3s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #3e5dcf;
+    transform: scale(1.05);
+}
+
+aside ul a {
+    text-decoration: none;
+}
+
+aside ul button {
+    width: 180px;
+    margin-left: -30px;
+    margin-top: 10px;
+}
+
+main .features {
+    float: left;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1 {
+    font-size: 50px;
+    margin-left: 10%;
+}
+
+main .features p {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 35%;
+    text-align: left;
+}
+
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
